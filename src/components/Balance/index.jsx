@@ -16,11 +16,10 @@ export const Balance = () => {
 
   return (
     <div className="balance">
-      <h2>Gastos</h2>
-      <h3>
-        R${' '}
+      <h2>
+        Total <br /> R${' '}
         {(totalIncomeAmount - totalExpenseAmount).toFixed(2).replace('.', ',')}
-      </h3>
+      </h2>
       <div className="income-expense">
         <div className="plus">
           <h3>Entradas</h3>

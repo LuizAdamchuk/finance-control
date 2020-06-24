@@ -12,7 +12,7 @@ html {
 .container {
   width: 100%;
   height: 100vh;
-  background-color: #77c987;
+  background-color: #b6b6b6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,10 +22,10 @@ html {
   width: 90%;
   max-width: 150rem;
   height: 80vh;
-  background-color: #2c2c2d;
-  color: #eee;
-  border-radius: 0.5rem;
-  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.7);
+  background-color: #260f2cf8;
+  color: #afadab;
+  border-radius: 16px;
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.2);
   display: grid;
   grid-template-columns: minmax(38%, 40rem) repeat(2, minmax(29%, 29rem));
   grid-template-rows: repeat(10, 1fr);
@@ -41,12 +41,11 @@ html {
 }
 
 .header h1 {
-  font-family: 'Muli', serif;
+  font-family: Roboto, sans-serif;
   font-size: 6rem;
   font-weight: 300;
-  text-transform: uppercase;
   letter-spacing: 0.2rem;
-  color: white;
+  color: rgb(223, 223, 223);
   text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
   text-align: center;
 }
@@ -63,14 +62,17 @@ html {
 }
 
 .balance h2 {
-  font-family: 'Baloo Da 2', serif;
+  font-family: Roboto, sans-serif;
   font-size: 4.5rem;
   font-weight: 300;
   text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+  border: 1px solid #474a4d;
+  padding: 16px;
+  border-radius: 8px;
 }
 
 .balance h3 {
-  font-family: 'Baloo Da 2', serif;
+  font-family: Roboto, sans-serif;
   font-size: 4rem;
   font-weight: 300;
   text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
@@ -80,7 +82,7 @@ html {
   display: flex;
   justify-content: space-evenly;
   margin-top: 10rem;
-  font-family: 'Muli', serif;
+  font-family: Roboto, sans-serif;
   text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
   text-align: right;
 }
@@ -91,11 +93,11 @@ html {
 }
 
 .plus {
-  color: #77c987;
+  color: #3f7049;
 }
 
 .minus {
-  color: #ff716e;
+  color: #a02624;
 }
 
 .income-expense h3 {
@@ -141,7 +143,7 @@ html {
   background: transparent;
   border-bottom: 0.2rem solid #777;
   padding: 0.5rem 0.5rem 0.5rem 0;
-  font-family: 'Baloo Da 2', serif;
+  font-family: Roboto, sans-serif;
   font-size: 1.8rem;
   color: #eee;
   outline: none;
@@ -162,7 +164,7 @@ html {
   border: none;
   outline: none;
   border-radius: 0.7rem;
-  font-family: 'Muli', serif;
+  font-family: Roboto, sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
@@ -178,11 +180,11 @@ html {
 }
 
 .income input[type='submit'] {
-  background-color: #77c987;
+  background-color: #3f7049;
 }
 
 .expense input[type='submit'] {
-  background-color: #ff716e;
+  background-color: #a02624;
 }
 
 input[type='number']::-webkit-inner-spin-button {
@@ -194,7 +196,7 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 .transactions h2 {
-  font-family: 'Baloo da 2', serif;
+  font-family: Roboto, sans-serif;
   font-size: 2.5rem;
   letter-spacing: 0.1rem;
   font-weight: 300;
@@ -237,7 +239,7 @@ input[type='number']::-webkit-inner-spin-button {
 
 .transaction {
   list-style: none;
-  font-family: 'Baloo da 2', serif;
+  font-family: Roboto, sans-serif;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
   margin-bottom: 1.5rem;
@@ -323,3 +325,4 @@ input[type='number']::-webkit-inner-spin-button {
     width: 28rem;
   }
 }
+@media (max-width: 900px);
