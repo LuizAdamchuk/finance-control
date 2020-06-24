@@ -24,7 +24,7 @@ export const AddTransaction = () => {
     e => {
       e.preventDefault();
 
-      if (incomeText !== '' && incomeAmount !== 0) {
+      if (incomeText !== '' && incomeAmount !== 0 && incomeAmount < 10000000) {
         const newIncomeTransaction = {
           id: uuid(),
           incomeText,
@@ -59,7 +59,11 @@ export const AddTransaction = () => {
     e => {
       e.preventDefault();
 
-      if (expenseText !== '' && expenseAmount !== 0) {
+      if (
+        expenseText !== '' &&
+        expenseAmount !== 0 &&
+        expenseAmount < 10000000
+      ) {
         const newExpenseTransaction = {
           id: uuid(),
           expenseText,

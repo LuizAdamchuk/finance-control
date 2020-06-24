@@ -3,29 +3,37 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
 }
+p {
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+
+  overflow: hidden;
+}
 
 .container {
-  width: 100%;
   height: 100vh;
-  background-color: #b6b6b6;
+
+  background-color: #260f2cf8;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 .app-wrapper {
-  width: 90%;
-  max-width: 150rem;
-  height: 80vh;
+  height: 90%;
+  width: 80%;
+
   background-color: #260f2cf8;
   color: #afadab;
   border-radius: 16px;
-  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.2);
   display: grid;
   grid-template-columns: minmax(38%, 40rem) repeat(2, minmax(29%, 29rem));
   grid-template-rows: repeat(10, 1fr);
@@ -69,6 +77,14 @@ html {
   border: 1px solid #474a4d;
   padding: 16px;
   border-radius: 8px;
+}
+
+.testeText {
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+
+  overflow: hidden;
 }
 
 .balance h3 {
@@ -266,6 +282,10 @@ input[type='number']::-webkit-inner-spin-button {
 
 .transaction-amount {
   transform: translateX(3rem);
+
+  text-overflow: ellipsis;
+
+  overflow: hidden;
 }
 
 .delete-btn {
@@ -309,20 +329,118 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 @media (max-width: 1200px) {
-  html {
-    font-size: 52%;
+  .container {
+    height: 100%;
   }
-
   .app-wrapper {
-    grid-gap: 0;
-  }
+    height: 100%;
 
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    flex: 1;
+    box-shadow: 0;
+  }
+  .header {
+    display: flex;
+  }
+  .balance {
+    display: flex;
+  }
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-group.income {
+    display: flex;
+    padding: 0 80px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-group.expense {
+    display: flex;
+    padding: 0 80px;
+    align-items: center;
+    justify-content: center;
+  }
+  .transactions.transactions-income {
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+    align-items: center;
+    justify-content: center;
+  }
+  .transactions.transactions-expense {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 80px;
+    align-items: center;
+    justify-content: center;
+  }
   .transaction-list {
-    max-height: 29rem;
-  }
-
-  .transaction {
-    width: 28rem;
+    display: flex;
+    padding: 0 80px;
+    align-items: flex-end;
+    justify-content: center;
   }
 }
-@media (max-width: 900px);
+@media (max-width: 900px) {
+  .container {
+    height: 100%;
+  }
+  .app-wrapper {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    flex: 1;
+    box-shadow: 0;
+  }
+  .header {
+    display: flex;
+  }
+  .balance {
+    display: flex;
+  }
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-group.income {
+    display: flex;
+    padding: 0 80px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-group.expense {
+    display: flex;
+    padding: 0 80px;
+    align-items: center;
+    justify-content: center;
+  }
+  .transactions.transactions-income {
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+    align-items: center;
+    justify-content: center;
+  }
+  .transactions.transactions-expense {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 80px;
+    align-items: center;
+    justify-content: center;
+  }
+  .transaction-list {
+    display: flex;
+    padding: 0 80px;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}

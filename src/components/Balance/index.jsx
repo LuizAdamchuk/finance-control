@@ -23,11 +23,15 @@ export const Balance = () => {
       <div className="income-expense">
         <div className="plus">
           <h3>Entradas</h3>
-          <p>+R$ {totalIncomeAmount.replace('.', ',')}</p>
+          <p className="testeTexto">
+            +R$ {totalIncomeAmount.replace('.', ',')}
+          </p>
         </div>
         <div className="minus">
           <h3>Gastos</h3>
-          <p>-R$ {totalExpenseAmount.replace('.', ',')}</p>
+          <p className="testeTexto">
+            -R$ {totalExpenseAmount.replace('.', ',')}
+          </p>
         </div>
       </div>
     </div>
