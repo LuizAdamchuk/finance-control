@@ -3,7 +3,7 @@
 # Features
 
 Application for financial control, using your Local Storage to keep your data. <br/>
-Working offline, after first use.<br/>
+Works offline, after first use.<br/>
 
 ## Installation
 
